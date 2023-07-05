@@ -9,6 +9,6 @@
 
 **Yazılım Dilleri:** React, Javascript, CSS, HTML
 
-
+[Bahadır]([https://github.com/bidirabiniz](https://github.com/bidirabinizz)https://github.com/bidirabinizz)
 
   
