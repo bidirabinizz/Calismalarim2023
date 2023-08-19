@@ -1,0 +1,33 @@
+* {
+  cursor: default;
+}
+.usercardMain {
+  background-color: rgb(0, 255, 242);
+  color: rgb(10, 10, 10);
+  padding: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid rgb(15, 15, 15);
+  border-radius: 20px;
+  transition: 1.5s;
+  min-width: 280px;
+  user-select: none;
+}
+.usercardMain:hover {
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+.usercardName {
+  margin: 0;
+}
+.usernameh6 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.usercardAHref {
+  text-decoration: none;
+  padding-top: 5px;
+  color: white;
+}
