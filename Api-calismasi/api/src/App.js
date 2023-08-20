@@ -8,7 +8,7 @@ function App() {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  let userURL = "https://jsonplaceholder.typicode.com/users";
+  let userURL = "http://localhost:3000/kullanici";
 
   useEffect(() => {
     veriYukle();
@@ -36,10 +36,9 @@ function App() {
       {loading && <h2>Yükleniyor...</h2>}
       {users.map((item) => (
         <UserListCard
-          username={item.name}
-          mail={item.email}
-          company={item.company.name}
-          location={item.address.street}
+          username={item.fullname}
+          mail={item.mail}
+          location={item.location}
           phone={item.phone}
           loginname={item.username}
           website={item.website}
