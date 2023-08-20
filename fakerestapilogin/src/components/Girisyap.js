@@ -3,33 +3,29 @@ import axios from "axios";
 
 const userURL = "http://localhost:3000/kullanici";
 
-function veriYukle() {
-  axios
-    .get(userURL)
-    .then((item) => {
-      console.log(item.data);
-    })
-    .catch(() => {})
-    .finally(() => {});
-}
-
 function Girisyap() {
-  const [users, setUsers] = useState([veriYukle()]);
+  const [LoggedInUsername, setLoggedInUsername] = useState("");
+  const [users, setUsers] = useState(null);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(false);
 
   useEffect(() => {
-    veriYukle();
+    fetch(userURL)
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setUsers(data);
+      });
   }, []);
 
   function butonTiklandi() {
-    veriYukle();
-
-    users.map((item) => {
-      if (item.username == username) {
-        if (item.password == password) {
+    users.map((data) => {
+      if (data.username == username) {
+        if (data.password == password) {
           setLogin(true);
+          setLoggedInUsername(data.fullname);
         }
       }
     });
@@ -38,6 +34,7 @@ function Girisyap() {
   return (
     <div className="maindiv">
       <h1>Giriş Yap</h1>
+
       {!login ? (
         <div>
           <input
@@ -63,7 +60,7 @@ function Girisyap() {
           <button onClick={butonTiklandi}>Giriş Yap</button>
         </div>
       ) : (
-        <h1>Giriş Yapıldı!</h1>
+        <h6>Hey, {LoggedInUsername} siteye hoşgeldin!</h6>
       )}
     </div>
   );
