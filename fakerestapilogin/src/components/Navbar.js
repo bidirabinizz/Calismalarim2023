@@ -3,8 +3,11 @@ import "./Navbar.css";
 function Navbar({ loggedInUsername, MailAdress }) {
   return (
     <div className="navbar">
-      <p className="denemep">Hoş geldiniz, {loggedInUsername}!</p>
-      <p className="denemep">Mail adresiniz : {MailAdress}</p>
+      <div>
+        <p className="denemep">Hoş geldiniz, {loggedInUsername}!</p>
+        <br />
+        {/* <p className="denemep">Mail adresiniz : {null}</p> */}
+      </div>
     </div>
   );
 }

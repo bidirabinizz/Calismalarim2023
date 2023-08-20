@@ -4,14 +4,17 @@ body {
   margin: 0;
 }
 .navbar {
+  position: fixed;
   background-color: black;
   color: white;
   width: 100%;
   height: auto;
 }
 .denemep {
-  text-align: center;
+  padding-right: 40px;
+  text-align: right;
   font-family: "Borel", cursive;
   font-family: "Poppins", sans-serif;
   line-height: 300%;
+  margin: 0;
 }
