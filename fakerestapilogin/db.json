@@ -2,13 +2,11 @@
   "kullanici": [
     {
       "id": 1,
-      "username": "bidir",
-      "fullname": "Bahadır",
-      "password": "123",
-      "mail": "siper2710@gmail.com",
-      "location": "Turkey / Edirne",
-      "phone": "+900543835****",
-      "website": "baynosatis.online"
+      "fullname": "Bahadır Yılmaz",
+      "username": "bahadir",
+      "password": 888,
+      "language": ["Dotnet", "Java", "SQL", "PHP"],
+      "admin": true
     }
   ]
 }
