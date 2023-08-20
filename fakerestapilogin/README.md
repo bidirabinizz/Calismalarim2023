@@ -4,8 +4,3 @@
 | -------- | ------------------------------- | -------------- |
 | Register | Kullanıcılar Kayıt Olabilir ✅  | Site </>       |
 | Login    | Kullanıcılar Giriş Yapabilir ✅ | Site </>       |
-
-| First Header | Second Header |
-| ------------ | ------------- |
-| Content Cell | Content Cell  |
-| Content Cell | Content Cell  |
