@@ -5,4 +5,4 @@
 | Register | Kullanıcılar Kayıt Olabilir ✅  | Site </>       |
 | Login    | Kullanıcılar Giriş Yapabilir ✅ | Site </>       |
 
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png)
+![](https://cdn.vectorstock.com/i/preview-1x/03/32/letter-b-monogram-logo-intersection-thin-line-vector-6010332.jpg)
