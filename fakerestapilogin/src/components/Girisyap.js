@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import Navbar from "./Navbar";
 const userURL = "http://localhost:3000/kullanici";
 
 function Girisyap() {
   const [LoggedInUsername, setLoggedInUsername] = useState("");
+  const [mailAdress, setMailAdress] = useState("");
   const [users, setUsers] = useState(null);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -26,6 +27,7 @@ function Girisyap() {
         if (data.password == password) {
           setLogin(true);
           setLoggedInUsername(data.fullname);
+          setMailAdress(data.mail);
         }
       }
     });
@@ -33,10 +35,9 @@ function Girisyap() {
 
   return (
     <div className="maindiv">
-      <h1>Giriş Yap</h1>
-
       {!login ? (
         <div>
+          <h1>Giriş Yap</h1>
           <input
             onChange={(e) => {
               setUsername(e.target.value);
@@ -60,7 +61,7 @@ function Girisyap() {
           <button onClick={butonTiklandi}>Giriş Yap</button>
         </div>
       ) : (
-        <h6>Hey, {LoggedInUsername} siteye hoşgeldin!</h6>
+        <Navbar loggedInUsername={LoggedInUsername} MailAdress={mailAdress} />
       )}
     </div>
   );

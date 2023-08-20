@@ -6,7 +6,8 @@
       "username": "bahadir",
       "password": 888,
       "language": ["Dotnet", "Java", "SQL", "PHP"],
-      "admin": true
+      "admin": true,
+      "mail": "deneme@gmail.com"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "username": "tugay",
       "password": 123,
       "language": ["Dotnet", "Java", "SQL", "PHP"],
-      "admin": false
+      "admin": false,
+      "mail": "deneme@gmail.com"
     }
   ]
 }
