@@ -14,7 +14,7 @@ function veriYukle() {
 }
 
 function Girisyap() {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([veriYukle()]);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(false);

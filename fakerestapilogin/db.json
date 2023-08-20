@@ -7,6 +7,14 @@
       "password": 888,
       "language": ["Dotnet", "Java", "SQL", "PHP"],
       "admin": true
+    },
+    {
+      "id": 2,
+      "fullname": "Tugay Yılmaz",
+      "username": "tugay",
+      "password": 123,
+      "language": ["Dotnet", "Java", "SQL", "PHP"],
+      "admin": false
     }
   ]
 }
