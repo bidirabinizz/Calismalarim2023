@@ -6,6 +6,7 @@ const userURL = "http://localhost:3000/kullanici";
 function Girisyap() {
   const [LoggedInUsername, setLoggedInUsername] = useState("");
   const [mailAdress, setMailAdress] = useState("");
+  const [admin, setAdmin] = useState("");
   const [users, setUsers] = useState(null);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -61,7 +62,11 @@ function Girisyap() {
           <button onClick={butonTiklandi}>Giriş Yap</button>
         </div>
       ) : (
-        <Navbar loggedInUsername={LoggedInUsername} MailAdress={mailAdress} />
+        <Navbar
+          loggedInUsername={LoggedInUsername}
+          MailAdress={mailAdress}
+          logininfo={login}
+        />
       )}
     </div>
   );
