@@ -1,0 +1,18 @@
+.SearchMainClass {
+  background-color: black;
+  display: inline-block;
+
+  width: 200px;
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+.SearchMainClass .title {
+  flex-direction: column;
+}
+.SearchMainClass img {
+  height: 75px;
+  width: 75px;
+
+  margin: 5px 10px 3px 10px;
+}

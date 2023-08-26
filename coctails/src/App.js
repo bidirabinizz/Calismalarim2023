@@ -3,7 +3,7 @@ import "./App.css";
 import axios from "axios";
 
 function App() {
-  return <div>App</div>;
+  return <div>asdasd</div>;
 }
 
 export default App;
