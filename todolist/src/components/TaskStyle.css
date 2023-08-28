@@ -1,0 +1,21 @@
+.taskMain {
+  background-color: red;
+  margin: 10px 100px;
+  display: inline-flex;
+  width: 500px;
+}
+.taskMain input {
+  flex: 0.2;
+}
+.taskMain label {
+  font-size: 24px;
+  margin-left: 10px;
+  font-family: "Oswald", sans-serif;
+}
+.inputCheckBox1 {
+  height: 30px;
+}
+.underStrike {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

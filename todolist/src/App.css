@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Oswald:wght@400&family=Poppins:wght@600&display=swap");
+
+.appMain {
+  margin: 100px;
+  padding: 20px;
+  text-align: center;
+}
+.appMain button {
+  padding: 10px 20px;
+  margin-left: 5px;
+}
+.appMain .input1 {
+  font-family: "Borel", cursive;
+  font-family: "Poppins", sans-serif;
+  height: 30px;
+  width: 400px;
+  text-align: center;
+  border: 0px;
+  font-size: 15px;
+  background-color: rgb(162, 190, 214);
+}
