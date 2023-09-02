@@ -1,22 +1,22 @@
 import React from "react";
 import "./TaskStyle.css";
 
-function Task({ taskName, done = false, id, func }) {
-  function checkBoxChange(e) {
-    console.log(e.target.checked);
+function Task({ taskname, done = false, id, func }) {
+  function checkboxChanged(e) {
+    // console.log(e.target.checked);
     func(e.target.checked, id);
   }
+
   return (
     <div className="taskMain">
       <input
-        onChange={checkBoxChange}
-        className="inputCheckBox1"
-        type="checkbox"
+        onChange={checkboxChanged}
         defaultChecked={done}
+        type="checkbox"
         id={id}
       />
-      <label className={done ? "underStrike" : "de"} htmlFor={id}>
-        {taskName}
+      <label className={done ? "understrike" : ""} htmlFor={id}>
+        {taskname}
       </label>
     </div>
   );

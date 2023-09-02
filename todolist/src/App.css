@@ -1,21 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Borel&family=Oswald:wght@400&family=Poppins:wght@600&display=swap");
-
 .appMain {
-  margin: 100px;
-  padding: 20px;
+  background-color: #7ff0d2;
   text-align: center;
+  /* margin: 200px; */
+  padding: 50px;
 }
+
 .appMain button {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
+  height: 45px;
+  width: 100px;
   margin-left: 5px;
+  color: white;
+  background-color: #313131;
+  border: 1px solid white;
 }
-.appMain .input1 {
-  font-family: "Borel", cursive;
-  font-family: "Poppins", sans-serif;
-  height: 30px;
+
+.appMain button:hover {
+  color: white;
+  background-color: #172f44;
+  /* border: 1px solid rgb(105, 104, 104); */
+}
+
+.appMain input {
+  margin: 10px;
+  height: 40px;
   width: 400px;
   text-align: center;
-  border: 0px;
-  font-size: 15px;
-  background-color: rgb(162, 190, 214);
+  /* border: 0px solid black; */
+  font-size: 20px;
+}
+
+.appMain h1 {
+  color: white;
+}
+
+.limit {
+  color: white;
+  font-weight: bold;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+}
+
+.taskCount {
+  color: white;
+  font-size: 16x;
 }
