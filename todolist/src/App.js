@@ -6,11 +6,7 @@ function App() {
   const [input1Value, setInput1Value] = useState("");
   const [completedTasks, setCompletedTasks] = useState(0);
 
-  const [tasks, setTasks] = useState([
-    { id: 1, task: "Github'a Proje Ekle", done: true },
-    { id: 2, task: "Javascript Öğren", done: false },
-    { id: 3, task: "C# Öğren", done: false },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
     let tempCounter = 0;

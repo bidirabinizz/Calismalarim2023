@@ -1,5 +1,7 @@
 .taskMain {
-  background-color: #080808;
+  background-color: #000000;
+  border-radius: 100px;
+  box-shadow: 1px 10px 10px #393939;
   width: 500px;
   /* margin: 10px 200px; */
   padding: 5px;
