@@ -74,7 +74,7 @@ function App() {
       >
         {input1Value.length}/25
       </label>
-      <button onClick={saveTask}>Add Task</button>
+      <button onClick={saveTask}>Görev Ekle</button>
 
       <br />
 
