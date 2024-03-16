@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
+import girisyapmatheme from "./girisyaptheme.css"
+
 const userURL = "http://localhost:3000/kullanici";
 
 function Girisyap() {
@@ -35,41 +37,52 @@ function Girisyap() {
   }
 
   return (
-    <div className="maindiv">
-      {!login ? (
-        <div>
-          <h1>Giriş Yap</h1>
-          <input
-            onChange={(e) => {
-              setUsername(e.target.value);
-            }}
-            value={username}
-            type="text"
-            name=""
-            id=""
-            placeholder="kullanıcı adı..."
+  <div className="deneme">
+    
+        {!login ? (
+          <div>
+            <div className="container">
+             <div className="maindiv">
+            <h1>Giriş Yap</h1>
+            <input
+              onChange={(e) => {
+                setUsername(e.target.value);
+              }}
+              value={username}
+              type="text"
+              name=""
+              id=""
+              placeholder="kullanıcı adı..."
+            />
+            <input
+              onChange={(e) => {
+                setPassword(e.target.value);
+              }}
+              value={password}
+              type="password"
+              name=""
+              id=""
+              placeholder="şifre..."
+            />
+
+            <br></br> 
+            
+            <button onClick={butonTiklandi} className="button">Giriş Yap</button>
+          </div>
+           </div>
+           </div>
+          
+        ) : (
+          <Navbar
+            loggedInUsername={LoggedInUsername}
+            MailAdress={mailAdress}
+            logininfo={login}
           />
-          <input
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
-            value={password}
-            type="password"
-            name=""
-            id=""
-            placeholder="şifre..."
-          />
-          <button onClick={butonTiklandi}>Giriş Yap</button>
-        </div>
-      ) : (
-        <Navbar
-          loggedInUsername={LoggedInUsername}
-          MailAdress={mailAdress}
-          logininfo={login}
-        />
-      )}
-    </div>
+        )}
+     
+  </div>
   );
+  
 }
 
 export default Girisyap;

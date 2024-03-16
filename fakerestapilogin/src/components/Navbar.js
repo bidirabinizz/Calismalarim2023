@@ -1,5 +1,7 @@
 import React from "react";
 import "./Navbar.css";
+
+
 function Navbar({ loggedInUsername, MailAdress, admininfo, logininfo }) {
   return (
     <div className="navbar">
