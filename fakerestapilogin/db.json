@@ -17,6 +17,15 @@
       "language": ["Dotnet", "Java", "SQL", "PHP"],
       "admin": false,
       "mail": "deneme@gmail.com"
+    },
+    {
+      "id": 3,
+      "fullname": "deneme Yılmaz",
+      "username": "123",
+      "password": 123,
+      "language": ["Dotnet", "Java", "SQL", "PHP"],
+      "admin": false,
+      "mail": "deneme@gmail.com"
     }
   ]
 }
