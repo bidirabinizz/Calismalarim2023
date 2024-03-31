@@ -73,7 +73,7 @@ function Girisyap() {
            </div>
           
         ) : (
-          
+          <div>
           
           <Navbar
             loggedInUsername={LoggedInUsername}
@@ -81,7 +81,9 @@ function Girisyap() {
             logininfo={login}
           />
           
-         
+          
+
+          </div>
         )}
      
   </div>
