@@ -9,6 +9,7 @@ function Navbar({ loggedInUsername, MailAdress, admininfo, logininfo }) {
         {logininfo ? (
           <div>
             <p className="denemep">Hoş geldiniz, {loggedInUsername}!</p>
+            
           </div>
         ) : (
           console.log("deneme")
