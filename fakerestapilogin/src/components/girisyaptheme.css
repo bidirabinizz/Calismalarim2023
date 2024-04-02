@@ -36,7 +36,16 @@ body::before {
    
     text-align: center;
 }
-
+.denemeh1{
+    position: absolute;
+    top: 2em;
+    margin-left: 1em;
+}
+.denemebutton{
+    position: absolute;
+    top: 2em;
+    margin-left: 1em;
+}
 .maindiv input {
     margin-bottom: 30px; /* Inputlar arasına boşluk eklemek için */
     padding: 10px;

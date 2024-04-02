@@ -19,6 +19,8 @@ function Navbar({ loggedInUsername, MailAdress, admininfo, logininfo }) {
         {/* <p className="denemep">Mail adresiniz : {null}</p> */}
       </div>
       {}
+
+        
     </div>
   );
 }

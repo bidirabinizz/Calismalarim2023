@@ -82,7 +82,8 @@ function Girisyap() {
           />
           
           
-
+          <h1 className="denemeh1">Deneme</h1>
+          
           </div>
         )}
      
