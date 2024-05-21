@@ -1,0 +1,11 @@
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\bin\Debug\telefon_rhbr.exe.config
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\bin\Debug\telefon_rhbr.exe
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\bin\Debug\telefon_rhbr.pdb
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\bin\Debug\MySql.Data.dll
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\obj\Debug\telefon_rhbr.csprojResolveAssemblyReference.cache
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\obj\Debug\telefon_rhbr.Form1.resources
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\obj\Debug\telefon_rhbr.Form2.resources
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\obj\Debug\telefon_rhbr.Properties.Resources.resources
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\obj\Debug\telefon_rhbr.csproj.GenerateResource.Cache
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\obj\Debug\telefon_rhbr.exe
+D:\Tayfun\telefon_reheberi\telefon_rhbr\telefon_rhbr\obj\Debug\telefon_rhbr.pdb

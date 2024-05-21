@@ -1,0 +1,18 @@
+CREATE DATABASE telefonrehberidb
+
+create table kisiler(
+kisi_id int primary key identity(1,1),
+ad varchar(20) not null,
+soyad varchar(20) not null,
+tel_no1 varchar(15) not null,
+tel_no2 varchar(15) ,
+mail varchar(30),
+unvan varchar(25),
+grup_id int
+);
+
+
+
+INSERT INTO telefonrehberidb.kisiler(ad,soyad,tel_no1,tel_no2,unvan) values 
+("Bahadır","Büyüktopaç","12","32","Öğrenci"),
+("Yasin","Ege","82","92","Öğrenci")

@@ -1,0 +1,9 @@
+ string sorgu = "Insert into kisiler(ad,soyad,tel_no1,grup_id) values (@ad,@soyad,@tel_no1,@grup_id)";
+            com = new SqlCommand(sorgu, baglanti);
+            com.Parameters.AddWithValue("@ad", txtAd.Text);
+            com.Parameters.AddWithValue("@soyad", txtSoyad.Text);
+            com.Parameters.AddWithValue("@tel_no1", txtNumara1.Text);
+            com.Parameters.AddWithValue("@grup_id", comboBox1.Text);
+            baglanti.Open();
+            com.ExecuteNonQuery();
+            baglanti.Close();
