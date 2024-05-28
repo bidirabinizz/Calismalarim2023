@@ -73,3 +73,8 @@ body::before {
 .maindiv .button:hover, .button:active, .button:focus{
     background-color: hsl(155, 55%, 63%);
 }
+.denemediv1{
+    background-color: white;
+    height: 10%;
+    width: 100%;
+}

@@ -4,6 +4,7 @@ body {
   margin: 0;
 }
 .navbar {
+  display: block;
   position: fixed;
   top: 0;
   background-color: black;
@@ -19,3 +20,4 @@ body {
   line-height: 300%;
   margin: 0;
 }
+
