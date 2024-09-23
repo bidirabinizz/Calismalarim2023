@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body {
     position: relative; /* Eklenen katmanın konumu belirlensin */
     background-image: url('../img/wallpapergiris.jpg');
@@ -24,9 +26,12 @@ body::before {
     height: 100vh;
 }
 .maindiv {
+    width: 20%;
     padding: 30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-image: linear-gradient(to right, #464646 0%, #adadad 100%) 1;
+    border-radius: 5px; 
+    border-width: 4px;
+    border-style: solid;
     display: flex;
     flex-direction: column; /* Inputları dikey olarak sıralamak için */
     align-items: center; /* Yatayda merkezlemek için */
@@ -55,9 +60,14 @@ body::before {
     margin-top: 10px;
     border: 1px solid hsl(246, 25%, 77%);
     text-align: center;
+    font-family: "Inter",sans-serif;
+    font-weight: normal;
+    font-style: normal;
   }
 
 .maindiv .button {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
     padding: 10px;
     min-width: 100%;
     margin-top: 20px;
