@@ -6,7 +6,7 @@ function anasayfa() {
     <div>
         <h1>askdjasd</h1>
         <h1>askdjasd</h1>
-        <h1>askdjasd</h1>
+        
     </div>
   )
 }

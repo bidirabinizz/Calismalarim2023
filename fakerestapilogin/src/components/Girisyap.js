@@ -74,21 +74,22 @@ function Girisyap() {
            </div>
           
         ) : (
+          <>
           <div>
-          
           <Navbar
             loggedInUsername={LoggedInUsername}
             MailAdress={mailAdress}
             logininfo={login}
           />
+          
+          
+          </div>
+          
           <Anasayfa
           
           />
           
-          
-          
-          
-          </div>
+          </>
         )}
      
   </div>
