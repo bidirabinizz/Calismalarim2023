@@ -32,6 +32,8 @@ function Girisyap() {
           setLogin(true);
           setLoggedInUsername(data.fullname);
           setMailAdress(data.mail);
+          setAdmin(data.admin);
+
         }
       }
     });
@@ -86,7 +88,9 @@ function Girisyap() {
           </div>
           
           <Anasayfa
-          
+            loggedInUsername={LoggedInUsername}
+            MailAdress={mailAdress}
+            Admin={admin}
           />
           
           </>
