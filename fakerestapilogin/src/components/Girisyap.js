@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
+import Anasayfa from "./anasayfa"
 import girisyapmatheme from "./girisyaptheme.css"
 
 const userURL = "http://localhost:3000/kullanici";
@@ -80,10 +81,11 @@ function Girisyap() {
             MailAdress={mailAdress}
             logininfo={login}
           />
+          <Anasayfa
+          
+          />
           
           
-          <h1 className="denemeh1">Deneme</h1>
-          <div className="denemediv1">s</div>
           
           
           </div>
