@@ -3,6 +3,7 @@ import axios from "axios";
 import Navbar from "./Navbar";
 import Anasayfa from "./anasayfa"
 import girisyapmatheme from "./girisyaptheme.css"
+import ScrollReveal from "scrollreveal";
 
 const userURL = "http://localhost:3000/kullanici";
 
@@ -38,6 +39,16 @@ function Girisyap() {
       }
     });
   }
+
+  useEffect(() => {
+    ScrollReveal().reveal('.container', {
+      delay: 600,
+      opacity: 0,
+      distance: "20px",
+      origin: "top",
+      scale: 0.3,
+    });
+  }, []);
 
   return (
   <div className="deneme">

@@ -10,4 +10,7 @@
 
 > Geliştirilme Aşamasında
 
+### Uygulamayı Çalıştırmak için ilk olarak json-server aktif etmeniz gerek
+### json-serveri çalıştırdıktan sonra 
+
 ##### Update 25.09.2024
