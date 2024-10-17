@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import "./anasayfa.css"
 import ScrollReveal from "scrollreveal";
 import axios from "axios";
+import Adminpanel from "./adminpanel";
+
 
 
 
@@ -15,7 +17,7 @@ function Anasayfa({loggedInUsername, MailAdress, Admin}) {
     const [adminGiris, setAdminGiris] = useState("Admin Giriş Durumu : ");
 
     function girisBasarisizFunc(){
-
+        <div>Giriş Başarısız</div>    
     }
 
     function kullaniciGetir(){
@@ -128,7 +130,12 @@ function Anasayfa({loggedInUsername, MailAdress, Admin}) {
 
             <div>{adminGiris}</div>
 
-            {adminGirisDurum ? <h1>Admin Girişi Başarılı</h1> : girisBasarisizFunc()}
+            {adminGirisDurum ? <div>
+                <h1>Admin Girişi Başarılı</h1>
+                <br></br>
+                <h2>Deneme</h2>
+                <Adminpanel/>
+            </div> : girisBasarisizFunc()}
 
         </div>
     </div>
