@@ -131,9 +131,8 @@ function Anasayfa({loggedInUsername, MailAdress, Admin}) {
             <div>{adminGiris}</div>
 
             {adminGirisDurum ? <div>
-                <h1>Admin Girişi Başarılı</h1>
-                <br></br>
-                <h2>Deneme</h2>
+               
+              
                 <Adminpanel/>
             </div> : girisBasarisizFunc()}
 

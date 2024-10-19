@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .adminPanelLink ul li{
     list-style-type: none;
     text-align: center;
+    font-style: normal;
+    
+    font-family: "Montserrat", sans-serif;
  
 }
 .adminPanelLink ul{
     padding-left: 0;
+    
 }
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
