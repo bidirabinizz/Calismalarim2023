@@ -52,6 +52,17 @@ export default function Adminpanel() {
   );
 }
 
+ // ScrollReveal ile sağdan sola kaydırma efekti
+ ScrollReveal().reveal('.denemeparagraf', {
+  delay: 100,
+  duration: 800,
+  origin: 'right', // Sağdan
+  distance: '100px', // 100px sağdan sola kayacak
+  easing: 'ease-in-out',
+  reset: true
+});
+
+
 /* Admin Gönderi Kontrol Paneli - Gönderilen Gönderileri Kontrol Etmek için */
 function GonderiKontrol() {
   return (
@@ -63,11 +74,13 @@ function GonderiKontrol() {
 
 /* Kullanıcı Ekleme Silme Güncelleme Sıralama gibi işlemleri buradan yapmak için oluşturuldu */
 function Kullanicilar({ users }) {
-  const [showUsers, setShowUsers] = useState(false); // Kullanıcıları göster/gizle kontrolü
+  const [showUsers, setShowUsers] = useState(false); // Kullanıcıları göster/gizle kontrolünn yapıldığı yer
 
   const handleButtonClick = () => {
-    setShowUsers(true); // Butona tıklanınca kullanıcıları göster
+    setShowUsers(true); // Butona tıklanınca kullanıcıları göstermek için yaptım
   };
+
+  console.log(users);
 
   return (
     <div>
@@ -75,16 +88,22 @@ function Kullanicilar({ users }) {
       <button onClick={handleButtonClick}>Kullanıcıları Listele</button>
 
       {showUsers && (
-        <ul>
+        <ul className="KullanicilarListelemeDuzen">
           {users.length > 0 ? (
             users.map((user) => (
               <li key={user.id}>
+                <p>Adı Soyadı : {user.fullname}</p>
                 <p>Kullanıcı Adı: {user.username}</p>
-                <p>Email: {user.email}</p>
+                <p>Email: {user.mail}</p>
+                <p>Bilinen Diller : {" "+ user.language} </p>
+                
               </li>
+             
             ))
+          
           ) : (
-            <p>Kullanıcı bulunamadı.</p>
+            <p>Kayıtlı Kullanıcı Bulunamadı.</p>
+            
           )}
         </ul>
       )}
@@ -93,7 +112,10 @@ function Kullanicilar({ users }) {
 }
 
 function Anasayfa() {
-  return <h2>Ana Sayfa</h2>;
+  return <div>
+    <h2>Ana Sayfa</h2>
+    <p className="denemeparagraf"> Deneme Paragraf </p>
+  </div>;
 }
 
 /* Eğer yeni bir router eklemek istersem baş harfleri büyük olmak zorunda */

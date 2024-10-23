@@ -18,3 +18,13 @@ a:-webkit-any-link {
     color: white;
     cursor: pointer;
   }
+.KullanicilarListelemeDuzen{
+    color: white;
+    padding: 0;
+    
+}
+.KullanicilarListelemeDuzen li{
+    padding-top: 30px;
+    list-style-type: none;
+
+}
