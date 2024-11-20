@@ -10,6 +10,7 @@ import {
 import ScrollReveal from "scrollreveal";
 import "./adminpanel.css";
 
+
 export default function Adminpanel() {
   const userURL = "http://localhost:3000/kullanici";
   const [users, setUsers] = useState([]); // Kullanıcıları tutmak için state
@@ -23,7 +24,19 @@ export default function Adminpanel() {
       });
   }, []);
 
+// Console log denemesi attım
+function denemeConsoleLog(){
+
+  users.map((user) => (
+    console.log(user.fullname)
+  ))
+
+}
+
+
+
   return (
+    
     <Router>
       <nav className="adminPanelLink">
         <ul>
@@ -63,11 +76,16 @@ export default function Adminpanel() {
 });
 
 
+
 /* Admin Gönderi Kontrol Paneli - Gönderilen Gönderileri Kontrol Etmek için */
 function GonderiKontrol() {
   return (
     <>
       <h2>Gönderi Kontrol Sayfası</h2>
+      <button onClick={() => {
+        console.log("asd")
+      }}></button>
+     
     </>
   );
 }

@@ -121,20 +121,25 @@ function Anasayfa({loggedInUsername, MailAdress, Admin}) {
             <span>Hoşgeldiniz, {loggedInUsername} </span>
             <div>Mail Adres, {MailAdress}</div>
 
-
+            
             <div>Admin Yetkisi : {Admin ? <span>Admin Girişi Yaptınız</span> : <span>Admin Değilsiniz</span>}</div>
             <button onClick={() => adminGirisKontrol(Admin)}>Admin Girişi Test</button>
 
 
             <div id="adminNotification" className="notification" style={{display: 'none'}}></div>
 
-            <div>{adminGiris}</div>
+         
+            {/* <div>{adminGiris}</div> */}
 
             {adminGirisDurum ? <div>
                
               
                 <Adminpanel/>
-            </div> : girisBasarisizFunc()}
+            </div> : <>
+            <div>{girisBasarisizFunc()}
+                
+            </div>
+            </>}
 
         </div>
     </div>
