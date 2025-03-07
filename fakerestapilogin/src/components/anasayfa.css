@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Great+Vibes&display=swap');
 
 .anasayfadeneme{
-    margin-top: 69px;
+    display: inline-block;
+    margin-top: 60px;
 }
 .anasayfaortala{
     text-align: center;
@@ -53,4 +55,12 @@
 
 .notification.error {
     background-color: red;
+}
+#txtOyunSeviyesiKasParaKazan {
+    position: absolute ;
+    right: 10px; /* Sağda 10px boşluk bırakmak için */
+    font-family: "Braah One", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
 }

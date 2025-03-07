@@ -10,26 +10,80 @@ body {
   background-color: black;
   color: white;
   width: 100%;
-  height: 8vh;
+  height: 9vh;
   
 }
 .denemep {
   text-align: right;
   font-family: "Borel", cursive;
   font-family: "Poppins", sans-serif;
-  line-height: 400%;
+
   margin: 0;
   display: inline;
   position: absolute;
-  right: 2px;
+  right: 10px;
 }
-.navbarLogo{
-  margin-left: 20px;
+.navbarLogo {
   position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+   /* Sol kenara yaslamak için */
+
+}
+
+.logoGorsel {
+  width: 9vh;
+  height: auto;
+}
+
+.logoutNavigation{
+  height: 30px;
+  width: 120px;
+  float: right;
+  margin-top: 35px;
+  display: flex;
+    
+  align-items: center;  /* Dikeyde ortalar */
+  justify-content: center; /* Yatayda ortalar */
+}
+.logoutButton {
+  color: white;
+  font-size: .8em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition:  .45s;
+  opacity: 1;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.logoutButton:hover{
+  opacity: 1;
+  letter-spacing: normal;
+}
+
+.logoutImage {
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+}
+.logoutImage{
   
 }
-.logoGorsel{
-  width: 8vh;
-  position: absolute;
-  left: -20px;
+.navbarLinkPanel{
+  font-size: 10px;
+  list-style-type: none;
+  width: 300px;
+  margin-left: 10em;
+}
+.navbarLinkPanel a{
+  list-style-type: none;
+}
+.navbarLinkPanel ul{
+  width: 300px;
+  display:flex;
 }

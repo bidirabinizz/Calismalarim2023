@@ -60,10 +60,10 @@ function Anasayfa({loggedInUsername, MailAdress, Admin}) {
             console.log("Admin Giriş Durumu : Başarısız");
 
             // Bildirim ayarları (Başarısız)
-            notification.textContent = "Admin girişi başarısız.";
+            notification.textContent = "Admin girişi başarısız. Lütfen sayfayı yenileyip tekrar deneyiniz.";
             notification.className = "notification error show";
 
-            // Admin Giriş Durumu Başarısızsa Admin Kontrol Paneli Açılmaz ve kullanıcı taraflı menü açılır (Başarısız)
+            // Admin Giriş Durumu Başarısızsa Admin Kontrol Paneli Açılmaz ve sayfayı yenilemeyi ister.
             setAdminGirisDurum(false);
         }
 
@@ -115,8 +115,11 @@ function Anasayfa({loggedInUsername, MailAdress, Admin}) {
     }, []);
 
   return (
-    <div className='anasayfadeneme'>
+    <div className='anasayfadeneme'> 
+        {Admin ? 
         <div className='anasayfaortala'>
+           
+            
             <br></br>
             <span>Hoşgeldiniz, {loggedInUsername} </span>
             <div>Mail Adres, {MailAdress}</div>
@@ -130,18 +133,27 @@ function Anasayfa({loggedInUsername, MailAdress, Admin}) {
 
          
             {/* <div>{adminGiris}</div> */}
-
+          
             {adminGirisDurum ? <div>
-               
+            
               
-                <Adminpanel/>
+                <Adminpanel/> 
             </div> : <>
             <div>{girisBasarisizFunc()}
                 
             </div>
-            </>}
+            </>} 
+           
 
         </div>
+        : <>
+        <div >
+            <span id='txtOyunSeviyesiKasParaKazan'></span>
+            <span>asd</span>
+        </div>
+        
+        </>
+}
     </div>
   )
 }

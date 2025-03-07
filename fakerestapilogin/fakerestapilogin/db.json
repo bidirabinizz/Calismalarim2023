@@ -1,0 +1,40 @@
+{
+  "kullanici": [
+    {
+      "id": 1,
+      "fullname": "Bahadir Yilmaz",
+      "username": "bahadir",
+      "password": 888,
+      "language": ["Dotnet", "Java", "SQL", "PHP"],
+      "admin": true,
+      "mail": "deneme@gmail.com"
+    },
+    {
+      "id": 2,
+      "fullname": "Tugay Yilmaz",
+      "username": "tugay",
+      "password": 123,
+      "language": ["Dotnet", "Java", "SQL", "PHP"],
+      "admin": false,
+      "mail": "deneme@gmail.com"
+    },
+    {
+      "id": 3,
+      "fullname": "deneme Yilmaz",
+      "username": "123",
+      "password": 123,
+      "language": ["Dotnet", "Java", "SQL", "PHP"],
+      "admin": false,
+      "mail": "deneme@gmail.com"
+    }, {
+      "id": 4,
+      "fullname": " Admin Kullanıcısı ",
+      "username": "1",
+      "password": 1,
+      "language": ["Dotnet", "Java", "SQL", "PHP"],
+      "admin": true,
+      "mail": "deneme@gmail.com"
+    }
+  
+  ]
+}
