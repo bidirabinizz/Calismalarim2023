@@ -137,6 +137,37 @@ function Anasayfa() {
 }
 
 /* Eğer yeni bir router eklemek istersem baş harfleri büyük olmak zorunda */
+/* Yama Notları Sayfası */
 function Yamanotlari() {
-  return <h2>Yama Notları</h2>;
+  const [gameStats, setGameStats] = useState({
+    score: 2323 ,
+    playersOnline: 0,
+    totalGames: 0
+  });
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      
+      setGameStats({
+        score: Math.floor(Math.random() * 1000), 
+        playersOnline: Math.floor(Math.random() * 100), 
+        totalGames: Math.floor(Math.random() * 500) // 
+      });
+    }, 1000); // Her saniyede bir güncelleme yapacak
+
+    return () => clearInterval(interval); 
+  }, []);
+
+  return (
+    <div>
+      <h2>Yama Notları</h2>
+      <h3>Canlı İstatistikler</h3>
+      <div className="gameStats">
+        <p><strong>Toplam Skor:</strong> {gameStats.score}</p>
+        <p><strong>Çevrimiçi Oyuncu Sayısı:</strong> {gameStats.playersOnline}</p>
+        <p><strong>Toplam Oyun Sayısı:</strong> {gameStats.totalGames}</p>
+      </div>
+    </div>
+  );
 }

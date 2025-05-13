@@ -37,15 +37,15 @@ function Girisyap() {
     fetchUsers();
 
     // Sayfa yüklendiğinde "Beni hatırla" verilerini kontrol et
-    const savedUsername = localStorage.getItem("username");
-    const savedPassword = localStorage.getItem("password");
-    const savedLoginStatus = localStorage.getItem("loginStatus");
-    const savedLoggedInUsername = localStorage.getItem("loggedInUsername");
+    const savedUsername = sessionStorage.getItem("username");
+    const savedPassword = sessionStorage.getItem("password");
+    const savedLoginStatus = sessionStorage.getItem("loginStatus");
+    const savedLoggedInUsername = sessionStorage.getItem("loggedInUsername");
 
     if (savedUsername && savedPassword && savedLoginStatus === "true" && savedLoggedInUsername) {
       setUsername(savedUsername);
       setPassword(savedPassword);
-      setLoggedInUsername(savedLoggedInUsername); // localStorage'dan kullanıcı adını al
+      setLoggedInUsername(savedLoggedInUsername); // sessionStorage'dan kullanıcı adını al
       setLogin(true); // Otomatik giriş
     }
   }, []);
@@ -75,12 +75,12 @@ function Girisyap() {
       setMailAdress(user.mail);
       setAdmin(user.admin);
 
-      // "Beni hatırla" seçeneği aktifse, verileri localStorage'a kaydet
+      // "Beni hatırla" seçeneği aktifse, verileri sessionStorage'a kaydet
       if (rememberMe) {
-        localStorage.setItem("username", username);
-        localStorage.setItem("password", password);
-        localStorage.setItem("loginStatus", "true");
-        localStorage.setItem("loggedInUsername", user.fullname); // Kullanıcı adını da kaydediyoruz
+        sessionStorage.setItem("username", username);
+        sessionStorage.setItem("password", password);
+        sessionStorage.setItem("loginStatus", "true");
+        sessionStorage.setItem("loggedInUsername", user.fullname); // Kullanıcı adını da kaydediyoruz
       }
     } else {
       console.log("Giriş başarısız! Kullanıcı adı veya şifre hatalı.");
@@ -120,8 +120,8 @@ function Girisyap() {
               />
               <br />
               <label>
-              Beni hatırla 
-              <input
+                Beni hatırla 
+                <input
                   type="checkbox"
                   checked={rememberMe}
                   onChange={() => setRememberMe(!rememberMe)}
